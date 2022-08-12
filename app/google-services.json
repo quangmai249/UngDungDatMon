@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "24031695094",
+    "firebase_url": "https://ql-nha-hang-3475b-default-rtdb.firebaseio.com",
+    "project_id": "ql-nha-hang-3475b",
+    "storage_bucket": "ql-nha-hang-3475b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24031695094:android:c9df556628700bcf6d1cd7",
+        "android_client_info": {
+          "package_name": "com.da.qlnhahang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24031695094-0ng5of1l1tsk5590tbfo83hrdvtpo17f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK8HVDEybPoQ1pTzrzeTl6SthaPxianh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24031695094-0ng5of1l1tsk5590tbfo83hrdvtpo17f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

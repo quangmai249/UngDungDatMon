@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/main"
+            android:paddingTop="100dp"
+            android:paddingBottom="100dp"
+            android:text="ĐĂNG NHẬP"/>
+        <EditText
+            android:id="@+id/edt_username"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_password"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="16dp"
+            android:hint="Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:text="Đăng nhập"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="-8dp"
+            app:cardCornerRadius="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/im_back"
+                    android:src="@drawable/ic_back"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="THÔNG TIN TÀI KHOẢN"
+                    android:gravity="center"
+                    android:layout_margin="30dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_input"
+            android:orientation="vertical">
+            <TextView
+                android:text="HỌ TÊN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edt_name"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="16dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                tools:text="Nguyen van a"/>
+            <TextView
+                android:layout_marginTop="16dp"
+                android:text="ĐỊA CHỈ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edt_address"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="16dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                tools:text="Nguyen van a"/>
+            <TextView
+                android:text="SỐ ĐIỆN THOẠI"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edt_phone"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="16dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                tools:text="Nguyen van a"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:text="Lưu"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
