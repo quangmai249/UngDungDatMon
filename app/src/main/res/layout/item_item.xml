@@ -13,7 +13,8 @@
             android:src="@mipmap/ic_launcher"
             android:scaleType="centerCrop"
             android:layout_width="64dp"
-            android:layout_height="64dp" />
+            android:layout_height="64dp"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,12 +28,14 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:textSize="24dp"
                 tools:text="Thit bo" />
 
             <TextView
                 android:id="@+id/tv_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="20dp"
                 tools:text="180000" />
         </LinearLayout>
     </LinearLayout>
