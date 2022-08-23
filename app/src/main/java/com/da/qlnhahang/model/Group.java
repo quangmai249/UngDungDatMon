@@ -1,7 +1,6 @@
 package com.da.qlnhahang.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Group {
     private String id;

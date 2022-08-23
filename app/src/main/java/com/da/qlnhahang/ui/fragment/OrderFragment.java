@@ -4,21 +4,19 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.da.qlnhahang.App;
-import com.da.qlnhahang.databinding.FragmentInfoBinding;
-import com.da.qlnhahang.databinding.FragmentOrderBinding;
-import com.da.qlnhahang.model.Item;
 import com.da.qlnhahang.model.Order;
 import com.da.qlnhahang.model.Table;
 import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.ui.MainActivity;
 import com.da.qlnhahang.ui.adapter.ItemOrderAdapter;
+import com.da.qlnhahang.databinding.FragmentOrderBinding;
+import com.da.qlnhahang.model.Item;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -34,7 +32,7 @@ public class OrderFragment extends Fragment implements ValueEventListener, ItemO
         binding = FragmentOrderBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
-
+//item
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -105,4 +103,6 @@ public class OrderFragment extends Fragment implements ValueEventListener, ItemO
     public void onItemItemClicked(Item item) {
 
     }
+
+
 }

@@ -12,11 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.da.qlnhahang.App;
-import com.da.qlnhahang.databinding.FragmentChangePasswordBinding;
-import com.da.qlnhahang.databinding.FragmentInfoBinding;
 import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.utils.Constance;
+import com.da.qlnhahang.App;
+import com.da.qlnhahang.databinding.FragmentChangePasswordBinding;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class ChangePasswordFragment extends Fragment {

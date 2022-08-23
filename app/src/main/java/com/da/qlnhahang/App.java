@@ -1,5 +1,6 @@
 package com.da.qlnhahang;
 
+
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
@@ -14,8 +15,6 @@ import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.ui.LoginActivity;
 import com.da.qlnhahang.ui.MainActivity;
 import com.da.qlnhahang.utils.Constance;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

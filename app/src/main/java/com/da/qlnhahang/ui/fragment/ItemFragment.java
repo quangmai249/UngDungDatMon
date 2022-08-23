@@ -9,15 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.da.qlnhahang.model.Group;
+import com.da.qlnhahang.model.Order;
 import com.da.qlnhahang.App;
 import com.da.qlnhahang.databinding.FragmentItemBinding;
-import com.da.qlnhahang.model.Group;
 import com.da.qlnhahang.model.Item;
-import com.da.qlnhahang.model.Order;
 import com.da.qlnhahang.model.Table;
-import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.ui.adapter.GroupPageAdapter;
-import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
@@ -57,9 +55,6 @@ public class ItemFragment extends Fragment {
             Order order = (Order) bundle.getSerializable(Order.class.getName());
             order.setWaiter(app.user.getId());
             order.setItems(items);
-//            FirebaseDatabase.getInstance().getReference("order").child(table.getId())
-//                            .child(order.getId()+ "")
-//                                    .setValue(order);
 
             getActivity().getSupportFragmentManager().popBackStack();
         });

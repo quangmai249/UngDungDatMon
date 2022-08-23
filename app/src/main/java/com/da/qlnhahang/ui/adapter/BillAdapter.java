@@ -1,5 +1,6 @@
 package com.da.qlnhahang.ui.adapter;
 
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,23 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.da.qlnhahang.R;
 import com.da.qlnhahang.databinding.ItemBillBinding;
-import com.da.qlnhahang.databinding.ItemTableBinding;
 import com.da.qlnhahang.model.Item;
-import com.da.qlnhahang.model.Order;
 import com.da.qlnhahang.model.Table;
 import com.da.qlnhahang.ui.MainActivity;
 import com.da.qlnhahang.ui.fragment.OrderFragment;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
 public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder> {
 
     private ArrayList<Table> data;
@@ -52,7 +45,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
         int position = index;
         holder.bindData(data.get(position), position);
     }
-
+//getcount
     @Override
     public int getItemCount() {
         return data == null ? 0 : data.size();

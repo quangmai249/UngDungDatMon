@@ -1,20 +1,14 @@
 package com.da.qlnhahang.ui.adapter;
 
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.da.qlnhahang.databinding.ItemItemBinding;
-import com.da.qlnhahang.databinding.ItemNotifyBinding;
-import com.da.qlnhahang.model.Item;
 import com.da.qlnhahang.model.Notify;
-import com.da.qlnhahang.utils.Constance;
+import com.da.qlnhahang.databinding.ItemNotifyBinding;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class NotifyAdapter extends RecyclerView.Adapter<NotifyAdapter.ItemViewHolder> {
@@ -61,3 +55,4 @@ public class NotifyAdapter extends RecyclerView.Adapter<NotifyAdapter.ItemViewHo
         }
     }
 }
+

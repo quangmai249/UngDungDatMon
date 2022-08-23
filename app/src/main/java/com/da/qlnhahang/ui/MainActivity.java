@@ -9,14 +9,13 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.da.qlnhahang.R;
-import com.da.qlnhahang.databinding.ActivityMainBinding;
-import com.da.qlnhahang.ui.fragment.BillFragment;
-import com.da.qlnhahang.ui.fragment.ChangePasswordFragment;
 import com.da.qlnhahang.ui.fragment.HomeFragment;
 import com.da.qlnhahang.ui.fragment.InfoFragment;
 import com.da.qlnhahang.ui.fragment.NotifyFragment;
 import com.da.qlnhahang.ui.fragment.SettingFragment;
+import com.da.qlnhahang.R;
+import com.da.qlnhahang.databinding.ActivityMainBinding;
+import com.da.qlnhahang.ui.fragment.BillFragment;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener {

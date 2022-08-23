@@ -11,12 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.da.qlnhahang.model.User;
+import com.da.qlnhahang.utils.Constance;
 import com.da.qlnhahang.App;
 import com.da.qlnhahang.databinding.FragmentSettingBinding;
-import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.ui.LoginActivity;
 import com.da.qlnhahang.ui.MainActivity;
-import com.da.qlnhahang.utils.Constance;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SettingFragment extends Fragment {
@@ -28,7 +28,6 @@ public class SettingFragment extends Fragment {
         binding = FragmentSettingBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -52,4 +51,5 @@ public class SettingFragment extends Fragment {
             act.showFm(new ChangePasswordFragment());
         });
     }
+
 }

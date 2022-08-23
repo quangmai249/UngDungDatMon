@@ -2,7 +2,6 @@ package com.da.qlnhahang.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Order implements Serializable {
     private long id = System.currentTimeMillis();

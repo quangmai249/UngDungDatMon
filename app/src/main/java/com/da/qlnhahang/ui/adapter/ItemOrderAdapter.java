@@ -1,7 +1,5 @@
 package com.da.qlnhahang.ui.adapter;
 
-import android.content.DialogInterface;
-import android.graphics.Color;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -13,18 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.da.qlnhahang.App;
-import com.da.qlnhahang.databinding.ItemItemBinding;
 import com.da.qlnhahang.databinding.ItemItemOrderBinding;
 import com.da.qlnhahang.model.Item;
-import com.da.qlnhahang.model.User;
-import com.da.qlnhahang.utils.Constance;
 import com.da.qlnhahang.utils.OrderStatus;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ItemOrderAdapter extends RecyclerView.Adapter<ItemOrderAdapter.ItemViewHolder> {
 
@@ -41,11 +33,11 @@ public class ItemOrderAdapter extends RecyclerView.Adapter<ItemOrderAdapter.Item
         isOwner = owner;
         notifyDataSetChanged();
     }
-
+//
     public ArrayList<Item> getData() {
         return data;
     }
-
+//
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

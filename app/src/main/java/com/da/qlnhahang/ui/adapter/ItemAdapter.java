@@ -1,7 +1,6 @@
 package com.da.qlnhahang.ui.adapter;
 
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -10,16 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.da.qlnhahang.databinding.ItemItemBinding;
-import com.da.qlnhahang.databinding.ItemTableBinding;
 import com.da.qlnhahang.model.Item;
-import com.da.qlnhahang.model.Table;
 import com.da.qlnhahang.utils.Constance;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
-
     private ArrayList<Item> data;
     private ItemItemClick listener;
 

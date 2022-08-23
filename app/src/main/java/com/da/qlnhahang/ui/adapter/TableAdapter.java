@@ -1,5 +1,6 @@
 package com.da.qlnhahang.ui.adapter;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,9 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.da.qlnhahang.databinding.ItemTableBinding;
+import com.da.qlnhahang.model.Item;
 import com.da.qlnhahang.model.Order;
 import com.da.qlnhahang.model.Table;
+import com.da.qlnhahang.databinding.ItemTableBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHolder> {
+public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHolder>{
 
     private ArrayList<Table> data;
     private ItemTableClick listener;
@@ -70,10 +72,30 @@ public class TableAdapter extends RecyclerView.Adapter<TableAdapter.TableViewHol
         void bindData(Table item, int position) {
             binding.tvName.setText(item.getRoom() + ": "+ item.getName());
             binding.tvStatus.setVisibility(View.VISIBLE);
+            binding.tvStatus.setTextColor(Color.BLACK);
             for (Order o: item.getOrders()) {
                 if (o.getStatus() == 0) {
-                    binding.tvStatus.setVisibility(View.INVISIBLE);
-                    return;
+                    int maxStatus = -1;
+                    for (Item i : o.getItems()) {
+                        if (i.getStatus() > maxStatus) {
+                            maxStatus = i.getStatus();
+                        }
+                    }
+                    if (maxStatus == 2) {
+                        binding.tvStatus.setText("Đợi giao");
+                        binding.tvStatus.setTextColor(Color.RED);
+                        return;
+                    }
+                    if (maxStatus == 1) {
+                        binding.tvStatus.setText("Đang chế biến");
+                        binding.tvStatus.setTextColor(Color.BLUE);
+                        return;
+                    }
+                    if (maxStatus == 0) {
+                        binding.tvStatus.setText("Đợi xác nhận");
+                        binding.tvStatus.setTextColor(Color.GREEN);
+                        return;
+                    }
                 }
             }
             if (reference == null) {

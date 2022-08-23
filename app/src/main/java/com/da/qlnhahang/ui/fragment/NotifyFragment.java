@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.da.qlnhahang.model.Notify;
 import com.da.qlnhahang.App;
 import com.da.qlnhahang.databinding.FragmentNotificationBinding;
-import com.da.qlnhahang.model.Notify;
 import com.da.qlnhahang.model.User;
 import com.da.qlnhahang.ui.adapter.NotifyAdapter;
 import com.google.firebase.database.DataSnapshot;

@@ -1,5 +1,6 @@
 package com.da.qlnhahang.model;
 
+
 import java.io.Serializable;
 import java.util.ArrayList;
 

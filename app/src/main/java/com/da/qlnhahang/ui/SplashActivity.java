@@ -9,11 +9,11 @@ import android.os.Looper;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.da.qlnhahang.utils.Constance;
 import com.da.qlnhahang.App;
 import com.da.qlnhahang.R;
-import com.da.qlnhahang.utils.Constance;
 
-public class SplashActivity extends AppCompatActivity {
+public  class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

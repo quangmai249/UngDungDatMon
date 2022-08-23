@@ -1,7 +1,6 @@
 package com.da.qlnhahang.model;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class Notify implements Serializable {
     private String waiter;
